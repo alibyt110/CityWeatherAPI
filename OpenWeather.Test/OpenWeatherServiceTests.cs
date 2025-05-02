@@ -33,12 +33,12 @@ namespace OpenWeather.Test;
 
             // Assert
             Assert.NotNull(result);
-            Assert.Equal(location.Lat, result.Latitude);
-            Assert.Equal(location.Lon, result.Longitude);
-            Assert.Equal(weather.Main.Temp, result.Temperature);
-            Assert.Equal(weather.Main.Feels_Like, result.FeelsLike);
-            Assert.Equal(weather.Main.Humidity, result.Humidity);
-            Assert.Equal(pollution.List.First().Main.Aqi, result.Aqi);
+            Assert.Equal(location.Lat, result.Data.Latitude);
+            Assert.Equal(location.Lon, result.Data.Longitude);
+            Assert.Equal(weather.Main.Temp, result.Data.Temperature);
+            Assert.Equal(weather.Main.Feels_Like, result.Data.FeelsLike);
+            Assert.Equal(weather.Main.Humidity, result.Data.Humidity);
+            Assert.Equal(pollution.List.First().Main.Aqi, result.Data.Aqi);
         }
 
 
@@ -56,7 +56,7 @@ namespace OpenWeather.Test;
             var result = await service.GetWeather(city);
 
             // Assert
-            Assert.Null(result);
+            Assert.Null(result.Data);
             factory.MockLogger.Received().Log(
                 LogLevel.Warning,
                 Arg.Any<EventId>(),
@@ -83,7 +83,7 @@ namespace OpenWeather.Test;
             var result = await service.GetWeather(city);
 
             // Assert
-            Assert.Null(result);
+            Assert.Null(result.Data);
             factory.MockLogger.Received().Log(
                 LogLevel.Warning,
                 Arg.Any<EventId>(),
@@ -113,7 +113,7 @@ namespace OpenWeather.Test;
             var result = await service.GetWeather(city);
 
             // Assert
-            Assert.Null(result);
+            Assert.Null(result.Data);
             factory.MockLogger.Received().Log(
                 LogLevel.Warning,
                 Arg.Any<EventId>(),

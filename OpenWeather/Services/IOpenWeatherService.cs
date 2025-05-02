@@ -1,7 +1,8 @@
 ﻿using OpenWeather.Models;
 
 namespace OpenWeather.Services;
-    public interface IOpenWeatherService
-    {
-        Task<WeatherDataDto> GetWeather(string city);
+public interface IOpenWeatherService
+{
+    //Task<WeatherDataDto> GetWeather(string city);
+    Task<ServiceResult<WeatherDataDto>> GetWeather(string city);
     }

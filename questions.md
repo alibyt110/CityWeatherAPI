@@ -1,7 +1,5 @@
 1 - How much time did you spend on this task? If you had more time, what improvements or additions would you make?
-It took me about two days to complete the task. If I had more time,
-I would have created a separate class for the weather service URLs, so I could simply reference its name wherever needed instead of using the full URL each time.
-I also would have implemented a base structure for API responses
+ It took me about two days to complete the task.
 
 2-What is the most useful feature recently added to your favorite programming language?
 Please include a code snippet to demonstrate how you use it.
@@ -28,11 +26,12 @@ In an event-driven system, the contract is usually defined by the sender — mea
 
 5- What’s your opinion about this technical test?
 It was very good and gave me the opportunity to review my knowledge and learn some new things. Thank you!
+
 6-Please describe yourself using JSON format.
 {
   "name": "Ali",
   "profession": "Backend Developer",
-  "skills": ["C#", ".NET", "SQL", "Clean Architecture", "Microservices"],
+  "skills": ["C#", ".NET", "SQL", "Clean Architecture","Clean Code"],
   "experience": "6 years",
   "interests": ["Coding", "Learning new technologies"],
   "location": "Tehran, Iran"

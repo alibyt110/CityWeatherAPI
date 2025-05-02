@@ -16,10 +16,9 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
-builder.Services.AddHttpClient<OpenWeatherHttpService>(config =>
-{
-    config.BaseAddress = new Uri("http://api.openweathermap.org/");
-});
+
+builder.Services.AddHttpClient<OpenWeatherHttpService>();
+builder.Services.AddSingleton<OpenWeatherApiEndpoints>();
 
 var apiKey = builder.Configuration["OpenWeather:ApiKey"];
 
