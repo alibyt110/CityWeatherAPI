@@ -20,6 +20,9 @@ builder.Services.AddHttpClient<OpenWeatherHttpService>(config =>
 {
     config.BaseAddress = new Uri("http://api.openweathermap.org/");
 });
+
+var apiKey = builder.Configuration["OpenWeather:ApiKey"];
+
 builder.Services.Configure<OpenWeatherOptions>(builder.Configuration.GetSection("OpenWeather"));
 builder.Services.AddScoped<IOpenWeatherHttpService, OpenWeatherHttpService>();
 builder.Services.AddScoped<IOpenWeatherService, OpenWeatherService>();
