@@ -5,8 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenWeather.Unit
-{
+namespace OpenWeather.Unit;
     public static class OpenWeatherTestDataFactory
     {
         public static CityLocationResponseDto CreateLocation(string city = "Tehran", double lat = 35.69, double lon = 51.39)
@@ -63,4 +62,3 @@ namespace OpenWeather.Unit
         }
     }
 
-}

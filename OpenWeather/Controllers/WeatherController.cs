@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using OpenWeather.Services;
 
-namespace OpenWeather.Controllers
-{
+namespace OpenWeather.Controllers;
     [ApiController]
     [Route("api/[controller]")]
     public class WeatherController : ControllerBase
@@ -28,4 +27,4 @@ namespace OpenWeather.Controllers
             return Ok(weatherData);
         }
     }
-}
+

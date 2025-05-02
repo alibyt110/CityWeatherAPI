@@ -3,9 +3,7 @@ using OpenWeather.Models;
 using System.Net.Http;
 using System.Text.Json;
 
-namespace OpenWeather.Services
-{
-
+namespace OpenWeather.Services;
 
     public sealed class OpenWeatherHttpService : IOpenWeatherHttpService
     {
@@ -89,8 +87,3 @@ namespace OpenWeather.Services
     }
 
 
-   
-
-
-
-}

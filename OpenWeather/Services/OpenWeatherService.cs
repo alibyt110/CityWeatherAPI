@@ -1,8 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using OpenWeather.Models;
 
-namespace OpenWeather.Services
-{
+namespace OpenWeather.Services;
     public sealed class OpenWeatherService : IOpenWeatherService
     {
         private readonly IOpenWeatherHttpService _openWeatherHttpService;
@@ -69,4 +68,4 @@ namespace OpenWeather.Services
             
         }
     }
-}
+

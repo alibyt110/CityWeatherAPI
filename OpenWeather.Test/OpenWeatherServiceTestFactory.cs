@@ -9,8 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenWeather.Unit
-{
+namespace OpenWeather.Unit;
     public class OpenWeatherServiceTestFactory
     {
         private readonly IOpenWeatherHttpService _mockHttpService = Substitute.For<IOpenWeatherHttpService>();
@@ -74,5 +73,3 @@ namespace OpenWeather.Unit
         }
     }
 
-
-}

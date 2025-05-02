@@ -1,5 +1,4 @@
-namespace OpenWeather
-{
+namespace OpenWeather;
     public class WeatherForecast
     {
         public DateOnly Date { get; set; }
@@ -10,4 +9,4 @@ namespace OpenWeather
 
         public string? Summary { get; set; }
     }
-}
+

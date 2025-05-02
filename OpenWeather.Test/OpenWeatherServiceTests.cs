@@ -9,12 +9,9 @@ using Microsoft.AspNetCore.Builder.Extensions;
 using OpenWeather.Unit;
 
 
-namespace OpenWeather.Test
-{
+namespace OpenWeather.Test;
     public class OpenWeatherServiceTests
     {
-
-
         [Fact]
         public async Task GetWeather_ReturnsWeatherData_WhenAllDataIsAvailable()
         {
@@ -128,4 +125,3 @@ namespace OpenWeather.Test
          
         }
     }
-}
